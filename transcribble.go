@@ -2,6 +2,9 @@ package main
 
 import (
 	"os"
+	"net/http"
+	"github.com/gorilla/mux"
+	"github.com/zacharycarter/transcribble/handlers"
 )
 
 type instrument struct {
@@ -33,6 +36,13 @@ func main() {
 
 func initialize(args []string) {
 	// instance := GetTranscribbleInstance()
+	indexHandler := &handlers.IndexHandler{}
+
+	r := mux.NewRouter()
+	r.HandleFunc("/", indexHandler.Handle)
+    r.PathPrefix("/").Handler(http.FileServer(http.Dir(".")))
+    http.Handle("/", r)
+    http.ListenAndServe(":8080", nil)
 }
 
 func GetTranscribbleInstance() *transcribble {

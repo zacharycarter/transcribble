@@ -1,0 +1,50 @@
+{
+  "name": "transcribble",
+  "version": "1.0.0",
+  "description": "music transcription webapp",
+  "main": "releases/transcribble-debug.js",
+  "scripts": {
+    "start": "grunt stage",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharycarter/transcribble.git"
+  },
+  "keywords": [
+    "music",
+    "notation",
+    "transcription"
+  ],
+  "author": {
+    "name": "Zachary Carter",
+    "email": "zacharycarter@pathfinderstudios.net",
+    "url": "http://pathfinderstudios.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacharycarter/transcribble/issues"
+  },
+  "homepage": "https://github.com/zacharycarter/transcribble#readme",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "docco": "^0.7.0",
+    "glob": "^5.0.13",
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.3.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-qunit": "^0.7.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-docco": "^0.3.3",
+    "grunt-git": "^0.3.5",
+    "grunt-release": "^0.13.0",
+    "jquery": "^2.1.4",
+    "qunit": "^0.7.6",
+    "vexflow": "^1.2.27"
+  }
+}
